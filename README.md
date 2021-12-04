@@ -11,3 +11,7 @@ Import successful!
 
 The resources that were imported are shown above. These resources are now in
 your Terraform state and will henceforth be managed by Terraform.
+
+
+# Setup Git
+Username for 'https://github.com': satinder.satty@gmail.com
