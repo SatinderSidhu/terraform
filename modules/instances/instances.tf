@@ -14,7 +14,6 @@ resource "google_compute_instance" "tf-instance-1" {
   allow_stopping_for_update = true
 }
 resource "google_compute_instance" "tf-instance-2" {
-  name         = "1671607854697995214"
   machine_type = "n1-standard-1"
   zone         = var.zone
 
