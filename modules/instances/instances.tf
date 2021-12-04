@@ -1,7 +1,8 @@
 resource "google_compute_instance" "tf-instance-1" {
-  name         = "731944322584730574"
+  name         = "tf-instance-1"
   machine_type = "n1-standard-1"
   zone         = var.zone
+  network_interface = "nic0"
 
   boot_disk {
     initialize_params {
@@ -14,8 +15,10 @@ resource "google_compute_instance" "tf-instance-1" {
   allow_stopping_for_update = true
 }
 resource "google_compute_instance" "tf-instance-2" {
+  name         = "tf-instance-2"
   machine_type = "n1-standard-1"
   zone         = var.zone
+  network_interface = "nic0"
 
   boot_disk {
     initialize_params {
